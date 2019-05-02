@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00a4a5</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#00a4a5</color>
+    <color name="selected_item">#d1e2e2</color>
+    <color name="colorActionMode">#009362</color>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/grid_card"
+    android:clickable="true"
+    android:layout_margin="1dp"
+    >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffff"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/category_img_id"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:background="#fff"
+            android:scaleType="centerInside"
+            android:src="@drawable/newspaper" />
+
+
+        <TextView
+            android:id="@+id/category_title_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_vertical|center"
+            android:text="Name"
+            android:textColor="#00a4a5"
+            android:textSize="24sp"
+            android:layout_marginBottom="20dp"/>
+
+    </FrameLayout>
+
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activites.CreatePost"
+    android:background="#EEE"
+    android:scrollbars="vertical"
+    android:id="@+id/scrool_parent">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Post/Blog"
+                android:layout_marginTop="10dp"
+                android:textColor="#00a4a5"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+
+                android:textAlignment="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#fff"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:id="@+id/post_title_form"
+                    android:hint="Post Title"
+                    android:textSize="20sp"
+
+
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lines="1"
+                    android:hint="Short desciption"
+                    android:id="@+id/short_description_form"
+                    android:textSize="20sp"
+                    />
+
+                <EditText
+                    android:id="@+id/post_content_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="top"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_bg"
+                    android:hint="Post Contant"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAlignment="gravity"
+                    android:singleLine="false"
+                    android:textSize="20sp"
+                    />
+
+
+<!--
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scrollbars="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="News"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:id="@+id/news_checkbox"
+                            /> <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bussiness"
+                        android:id="@+id/business_checkbox"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        /> <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sports"
+                        android:id="@+id/sport_checkbox"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fashion"
+                            android:id="@+id/fashion_checkbox"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Health"
+                            android:id="@+id/health_checkbox"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            />
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Food"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:id="@+id/food_checkbox"
+                            />
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView> -->
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:text="Click to Select category"
+                    android:layout_gravity="center"
+                    android:id="@+id/select_category"
+                    android:background="@drawable/gradiant"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:textColor="#fff"
+                    android:clickable="true"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:padding="20dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:contextClickable="true"
+                        android:background="@drawable/loadingshape"
+                        android:id="@+id/upload_image_view"
+                        android:visibility="gone"
+                        />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="Choose Image from Gallery"
+                        android:id="@+id/choose_image_from_gallery"
+                        android:background="@drawable/btn_bg"
+                        android:textColor="#000"
+                        android:drawableEnd="@drawable/gallery"
+                        android:padding="10dp"
+
+
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Author info:"
+                android:layout_marginTop="10dp"
+                android:textColor="#00a4a5"
+                android:textSize="25sp"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#fff"
+                android:layout_marginTop="20dp"
+                android:padding="20dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:hint="Full Name"
+                    android:id="@+id/full_name_form"
+                    android:textSize="20sp"
+
+
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lines="1"
+                    android:hint="Email"
+                    android:id="@+id/email_form"
+                    android:textSize="20sp"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Submit"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:id="@+id/submit_form_button"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/gradiant"
+                    android:textColor="#fff"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+

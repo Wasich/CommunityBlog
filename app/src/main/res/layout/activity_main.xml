@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.MainActivity"
+    android:background="#EEE"
+    android:orientation="vertical">
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:layout_height="80dp"
+            android:text="Welcome To Community"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:textColor="#00a4a5"
+            android:textSize="24sp"
+            android:background="#EEE"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gridrecyclerview"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+    </LinearLayout>
+

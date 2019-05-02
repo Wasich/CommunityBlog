@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:padding="8dp"
+    android:background="#fff"
+    android:id="@+id/container_vertical">
+
+
+
+
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/loadingshape"
+        android:scaleType="centerCrop"
+
+
+        android:id="@+id/thumbnail_id"/>
+
+
+
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+
+        >
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_list_title"
+            android:text="Post Title"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:maxLines="2"
+           
+            />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Auther Name"
+            android:textColor="#00a4a5"
+            android:id="@+id/author_name"
+
+            />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="2019-02-28"
+            android:layout_marginTop="10dp"
+            android:id="@+id/date_id"
+
+            android:textColor="#00a4a5"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            android:paddingRight="5dp"/>
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:src="@drawable/nxt"
+            android:layout_marginLeft="15dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
