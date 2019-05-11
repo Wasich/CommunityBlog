@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
+
 import com.example.designer2.communityblog.activites.DetailedPosts;
 import com.example.designer2.communityblog.model.ModelCategory;
 import com.example.designer2.communityblog.R;
